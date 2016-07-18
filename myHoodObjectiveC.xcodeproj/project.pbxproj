@@ -7,27 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		195677861D3AD59C00FD7606 /* PostCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1957F6711D1740BD0017236A /* PostCell.m */; };
+		1957F66E1D1724F00017236A /* AddPostVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1957F66D1D1724F00017236A /* AddPostVC.m */; };
 		19ED03E91D1250E6003D834E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 19ED03E81D1250E6003D834E /* main.m */; };
 		19ED03EC1D1250E6003D834E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 19ED03EB1D1250E6003D834E /* AppDelegate.m */; };
-		19ED03EF1D1250E6003D834E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19ED03EE1D1250E6003D834E /* ViewController.m */; };
 		19ED03F21D1250E6003D834E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19ED03F01D1250E6003D834E /* Main.storyboard */; };
 		19ED03F51D1250E6003D834E /* myHoodObjectiveC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 19ED03F31D1250E6003D834E /* myHoodObjectiveC.xcdatamodeld */; };
 		19ED03F71D1250E6003D834E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19ED03F61D1250E6003D834E /* Assets.xcassets */; };
 		19ED03FA1D1250E6003D834E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19ED03F81D1250E6003D834E /* LaunchScreen.storyboard */; };
+		19ED04031D12510A003D834E /* DataService.m in Sources */ = {isa = PBXBuildFile; fileRef = 19ED04021D12510A003D834E /* DataService.m */; };
+		19ED04061D125186003D834E /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = 19ED04051D125186003D834E /* Post.m */; };
+		19FBFDDB1D29FAB300D82936 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19FBFDDA1D29FAB300D82936 /* TableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1957F66C1D1724F00017236A /* AddPostVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddPostVC.h; sourceTree = "<group>"; };
+		1957F66D1D1724F00017236A /* AddPostVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPostVC.m; sourceTree = "<group>"; };
+		1957F6701D1740BD0017236A /* PostCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostCell.h; sourceTree = "<group>"; };
+		1957F6711D1740BD0017236A /* PostCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostCell.m; sourceTree = "<group>"; };
 		19ED03E41D1250E6003D834E /* myHoodObjectiveC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myHoodObjectiveC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19ED03E81D1250E6003D834E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		19ED03EA1D1250E6003D834E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		19ED03EB1D1250E6003D834E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		19ED03ED1D1250E6003D834E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		19ED03EE1D1250E6003D834E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		19ED03F11D1250E6003D834E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		19ED03F41D1250E6003D834E /* myHoodObjectiveC.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = myHoodObjectiveC.xcdatamodel; sourceTree = "<group>"; };
 		19ED03F61D1250E6003D834E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19ED03F91D1250E6003D834E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19ED03FB1D1250E6003D834E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19ED04011D12510A003D834E /* DataService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataService.h; sourceTree = "<group>"; };
+		19ED04021D12510A003D834E /* DataService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataService.m; sourceTree = "<group>"; };
+		19ED04041D125186003D834E /* Post.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Post.h; sourceTree = "<group>"; };
+		19ED04051D125186003D834E /* Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
+		19FBFDD91D29FAB300D82936 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		19FBFDDA1D29FAB300D82936 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +53,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1957F6691D17242E0017236A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				19ED04041D125186003D834E /* Post.h */,
+				19ED04051D125186003D834E /* Post.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		1957F66A1D17243B0017236A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				19ED03F01D1250E6003D834E /* Main.storyboard */,
+				1957F6701D1740BD0017236A /* PostCell.h */,
+				1957F6711D1740BD0017236A /* PostCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		1957F66B1D1724470017236A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1957F66C1D1724F00017236A /* AddPostVC.h */,
+				1957F66D1D1724F00017236A /* AddPostVC.m */,
+				19FBFDD91D29FAB300D82936 /* TableViewController.h */,
+				19FBFDDA1D29FAB300D82936 /* TableViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		1957F66F1D172FFD0017236A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				19ED04011D12510A003D834E /* DataService.h */,
+				19ED04021D12510A003D834E /* DataService.m */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		19ED03DB1D1250E6003D834E = {
 			isa = PBXGroup;
 			children = (
@@ -60,11 +111,12 @@
 		19ED03E61D1250E6003D834E /* myHoodObjectiveC */ = {
 			isa = PBXGroup;
 			children = (
+				1957F66F1D172FFD0017236A /* Services */,
+				1957F6691D17242E0017236A /* Model */,
+				1957F66A1D17243B0017236A /* View */,
+				1957F66B1D1724470017236A /* Controller */,
 				19ED03EA1D1250E6003D834E /* AppDelegate.h */,
 				19ED03EB1D1250E6003D834E /* AppDelegate.m */,
-				19ED03ED1D1250E6003D834E /* ViewController.h */,
-				19ED03EE1D1250E6003D834E /* ViewController.m */,
-				19ED03F01D1250E6003D834E /* Main.storyboard */,
 				19ED03F61D1250E6003D834E /* Assets.xcassets */,
 				19ED03F81D1250E6003D834E /* LaunchScreen.storyboard */,
 				19ED03FB1D1250E6003D834E /* Info.plist */,
@@ -113,6 +165,7 @@
 				TargetAttributes = {
 					19ED03E31D1250E6003D834E = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = ZXS9ZP9K6N;
 					};
 				};
 			};
@@ -152,8 +205,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19ED03EF1D1250E6003D834E /* ViewController.m in Sources */,
+				19ED04061D125186003D834E /* Post.m in Sources */,
+				19ED04031D12510A003D834E /* DataService.m in Sources */,
+				19FBFDDB1D29FAB300D82936 /* TableViewController.m in Sources */,
+				195677861D3AD59C00FD7606 /* PostCell.m in Sources */,
 				19ED03EC1D1250E6003D834E /* AppDelegate.m in Sources */,
+				1957F66E1D1724F00017236A /* AddPostVC.m in Sources */,
 				19ED03E91D1250E6003D834E /* main.m in Sources */,
 				19ED03F51D1250E6003D834E /* myHoodObjectiveC.xcdatamodeld in Sources */,
 			);
@@ -269,7 +326,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = myHoodObjectiveC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Shawn.myHoodObjectiveC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -280,7 +339,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = myHoodObjectiveC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Shawn.myHoodObjectiveC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -306,6 +367,7 @@
 				19ED04001D1250E6003D834E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
