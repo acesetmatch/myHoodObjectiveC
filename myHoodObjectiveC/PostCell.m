@@ -11,25 +11,23 @@
 #import "DataService.h"
 
 @interface PostCell()
-@property (weak, nonatomic) IBOutlet UIImageView *postImg;
-@property (weak, nonatomic) IBOutlet UILabel *titleLbl;
-@property (weak, nonatomic) IBOutlet UILabel *descLbl;
-
 
 @end
 
 @implementation PostCell
+@synthesize postImg;
+@synthesize descLbl;
+@synthesize titleLbl;
 
 - (void)awakeFromNib {
-//    [super awakeFromNib];
-    self.postImg.layer.cornerRadius = self.postImg.frame.size.width/2;
+    [super awakeFromNib];
+    self.postImg.layer.cornerRadius = (self.postImg.frame.size.width)/2;
     self.postImg.clipsToBounds = true;
-    
 }
 
 -(void)configureCell:(nonnull Post*)post {
-    self.titleLbl.text = post.title;
-    self.descLbl.text = post.postDesc;
+    [self.titleLbl  setText:post.title];
+    [self.descLbl  setText:post.postDesc];
     DataService *dataService = [DataService instance];
     self.postImg.image = [dataService imageForPath:post.imagePath];
 }

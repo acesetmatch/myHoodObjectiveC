@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DataService.h"
 
-@interface TableViewController : UIViewController <UITableViewDelegate,UITableViewDataSource>
+@interface TableViewController : UIViewController <UITableViewDelegate,UITableViewDataSource> {
+    DataService *ds;
 
+}
+
+-(void) onPostsLoaded:(NSNotification *) notif ;
 @end

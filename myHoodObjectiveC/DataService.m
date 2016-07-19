@@ -28,10 +28,17 @@
     return sharedInstance;
 }
 
+- (id)init {
+    if (self = [super init]) {
+        _loadedPosts = [[NSMutableArray alloc]init];
+ }
+    return self;
+}
+
 
 
 - (void)savePosts{
-    NSData *postsData = [NSKeyedArchiver archivedDataWithRootObject:self.loadedPosts];
+    NSData *postsData = [NSKeyedArchiver archivedDataWithRootObject:_loadedPosts];
 
     [[NSUserDefaults standardUserDefaults] setObject:postsData forKey: @"posts"];
     [[NSUserDefaults standardUserDefaults] synchronize];
@@ -43,11 +50,11 @@
          NSData *postsData = [[NSUserDefaults standardUserDefaults] objectForKey:@"posts"];
          NSMutableArray *postArray = [NSKeyedUnarchiver unarchiveObjectWithData:postsData];
          if (postArray) {
-             self.loadedPosts = postArray;
+             _loadedPosts = postArray;
          }
      }
     
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"postsLoaded" object:self];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"postsLoaded" object:nil];
     
 }
 
@@ -72,9 +79,7 @@
 }
 
 - (void)addPost: (Post*) post {
-    NSMutableArray *mutableArray = [[NSMutableArray alloc] init];
-    [mutableArray addObject:post];
-    _loadedPosts = mutableArray;
+    [_loadedPosts addObject:post];
     [self savePosts];
     [self loadPosts];
     

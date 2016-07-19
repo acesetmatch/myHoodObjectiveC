@@ -29,19 +29,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OgH-hi-dJS">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OgH-hi-dJS">
                                 <rect key="frame" x="20" y="72" width="560" height="508"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="sectionIndexBackgroundColor" red="1" green="0.040371172980000002" blue="0.053220982049999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="80" id="557-BS-6V0" customClass="PostCell">
                                         <rect key="frame" x="0.0" y="28" width="560" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="557-BS-6V0" id="hQU-Rq-r6n">
-                                            <rect key="frame" x="0.0" y="0.0" width="560" height="79.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="560" height="80"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="barrel-water-bridge" translatesAutoresizingMaskIntoConstraints="NO" id="Is2-ad-DzI">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="barrel-water-bridge" translatesAutoresizingMaskIntoConstraints="NO" id="Is2-ad-DzI">
                                                     <rect key="frame" x="8" y="8" width="74" height="64"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="70" id="7OV-5C-t4o"/>
@@ -68,7 +67,6 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstItem="hvs-OY-gsx" firstAttribute="trailing" secondItem="hQU-Rq-r6n" secondAttribute="trailingMargin" id="49D-m4-Nlu"/>
                                                 <constraint firstItem="hvs-OY-gsx" firstAttribute="leading" secondItem="Is2-ad-DzI" secondAttribute="trailing" constant="8" id="Kf3-nV-hSs"/>
@@ -87,7 +85,6 @@
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="descLbl" destination="hvs-OY-gsx" id="MwQ-1Z-cgL"/>
                                             <outlet property="postImg" destination="Is2-ad-DzI" id="2y7-sR-BaJ"/>

@@ -7,11 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "Post.h"
+#import "DataService.h"
 @class Post;
 
 
 @interface PostCell : UITableViewCell
 
--(void)configureCell:(nonnull Post*)post;
+@property (weak, nonatomic) IBOutlet UIImageView *postImg;
+@property (weak, nonatomic) IBOutlet UILabel *titleLbl;
+@property (weak, nonatomic) IBOutlet UILabel *descLbl;
+
+-(void)configureCell:(Post*)post;
 @end

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AddPostVC : UIViewController
+@interface AddPostVC : UIViewController <UIImagePickerControllerDelegate>
 @property(weak,nonatomic) IBOutlet UITextField * titleField;
 @property(weak,nonatomic) IBOutlet UIImageView * postImg;
 @property(weak,nonatomic) IBOutlet UITextField * descField;

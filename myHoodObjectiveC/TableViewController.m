@@ -22,12 +22,12 @@
     [super viewDidLoad];
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
-    
+    ds = [DataService instance];
     [[DataService instance] loadPosts];
     NSNotificationCenter *center = [NSNotificationCenter defaultCenter];
     [center addObserver:self selector:@selector(onPostsLoaded:) name:@"postsLoaded" object:nil ];
 //    self.postsArray = [[NSArray alloc] init];
-    self.postsArray = [[DataService instance] loadedPosts];
+//    self.postsArray = [[DataService instance] loadedPosts];
     
     
 }
@@ -42,29 +42,23 @@
 
 
 - (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    PostCell *cell  = [tableView dequeueReusableCellWithIdentifier:@"Main"];
-    if (!cell) {
-        cell = [[PostCell alloc] init];
+    PostCell *cell  = [tableView dequeueReusableCellWithIdentifier:@"PostCell"];
+    Post *post = ds.loadedPosts[indexPath.row];
+
+    if (cell) {
+        [cell configureCell:post];
         return cell;
     } else {
         cell = [[PostCell alloc] init];
+        [cell configureCell:post];
         return cell;
     }
 }
 
-- (void) tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
-    Post *post = [self.postsArray objectAtIndex:indexPath.row];
-    PostCell *postCell = (PostCell*)cell;
-    [postCell configureCell:post];
-    [self.tableView reloadData];
-
-    
-    
-}
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {    
-        return self.postsArray.count;
+        return ds.loadedPosts.count ;
 }
 
 
@@ -73,7 +67,7 @@
 }
     
 
--(void) onPostsLoaded:(NSObject *) notif {
+-(void) onPostsLoaded:(NSNotification *) notif {
         [self.tableView reloadData];
 }
 

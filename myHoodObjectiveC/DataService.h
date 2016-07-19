@@ -12,7 +12,7 @@
 
 @interface DataService : NSObject
 
-@property(nonatomic,strong)NSArray *loadedPosts;
+@property(nonatomic,strong)NSMutableArray *loadedPosts;
 
 
 //- (UIImage*)imageForPath;
